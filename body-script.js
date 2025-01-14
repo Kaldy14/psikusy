@@ -1,7 +1,11 @@
 const formElement = document.getElementById("formSearchForm");
-const targetElement = document.getElementById("header");
-if (formElement && targetElement) {
-  targetElement.prepend(formElement);
+const headerElement = document.getElementById("header");
+
+const targetDiv = headerElement ? headerElement.querySelector("div") : null;
+
+if (formElement && targetDiv) {
+  targetDiv.style.paddingBottom = "3rem";
+  targetDiv.appendChild(formElement);
 } else {
-  console.error("Either the form or the target element was not found.");
+  console.error("Relocation of form failed");
 }
