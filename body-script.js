@@ -9,3 +9,14 @@ if (formElement && targetDiv) {
 } else {
   console.error("Relocation of form failed");
 }
+
+if (window.location.pathname === "/") {
+  const welcomeWrapper = document.querySelector(".welcome-wrapper");
+  const contentElement = document.getElementById("content");
+
+  if (welcomeWrapper && contentElement) {
+    contentElement.prepend(welcomeWrapper);
+  } else {
+    console.error("Changing of texts in welcome page failed");
+  }
+}
