@@ -5,7 +5,14 @@ const targetDiv = headerElement ? headerElement.querySelector("div") : null;
 
 if (formElement && targetDiv) {
   targetDiv.style.paddingBottom = "3rem";
-  targetDiv.appendChild(formElement);
+  formElement.style.width = "75%";
+
+  const wrapperDiv = document.createElement("div");
+  wrapperDiv.className = "form-wrapper";
+
+  wrapperDiv.appendChild(formElement);
+
+  targetDiv.appendChild(wrapperDiv);
 } else {
   console.error("Relocation of form failed");
 }
