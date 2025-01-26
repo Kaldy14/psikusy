@@ -42,7 +42,7 @@
     }),
     (e.__SV = 1));
 })(document, window.posthog || []);
-posthog.init("phc_mWokqLCeC1pJwOcSmPYHQDxhiraojyGcqd2m8iHweUa", {
-  api_host: "https://us.i.posthog.com",
+posthog.init("phc_JMdPNhURpJkIBl4AZsGv39kLcCZUwP3M0fi2638XS67", {
+  api_host: "https://eu.i.posthog.com",
   person_profiles: "always",
 });
