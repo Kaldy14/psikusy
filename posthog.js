@@ -43,6 +43,7 @@
     (e.__SV = 1));
 })(document, window.posthog || []);
 posthog.init("phc_JMdPNhURpJkIBl4AZsGv39kLcCZUwP3M0fi2638XS67", {
-  api_host: "https://eu.i.posthog.com",
+  // api_host: "https://eu.i.posthog.com",
+  api_host: "https://hog.cloud.3dstisk.cz",
   person_profiles: "always",
 });
